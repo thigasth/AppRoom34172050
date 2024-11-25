@@ -46,6 +46,7 @@ import com.example.rgm34172050.InventoryTopAppBar
 import com.example.rgm34172050.ui.AppViewModelProvider
 import com.example.rgm34172050.ui.navigation.NavigationDestination
 import com.example.rgm34172050.ui.theme.InventoryTheme
+import kotlinx.coroutines.launch
 import java.util.Currency
 import java.util.Locale
 
@@ -61,8 +62,10 @@ fun ItemEntryScreen(
     onNavigateUp: () -> Unit,
     canNavigateBack: Boolean = true,
     viewModel: ItemEntryViewModel = viewModel(factory = AppViewModelProvider.Factory),
-
 ) {
+
+    val coroutineScope = rememberCoroutineScope()
+
     Scaffold(
         topBar = {
             InventoryTopAppBar(
@@ -76,6 +79,10 @@ fun ItemEntryScreen(
             itemUiState = viewModel.itemUiState,
             onItemValueChange = viewModel::updateUiState,
             onSaveClick = {
+                coroutineScope.launch {
+                    viewModel.saveItem()
+                    navigateBack()
+                }
             },
             modifier = Modifier
                 .padding(
