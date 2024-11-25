@@ -47,8 +47,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.inventory.R
 import com.example.rgm34172050.InventoryTopAppBar
-import com.example.rgm34172050.R
 import com.example.rgm34172050.data.Item
 import com.example.rgm34172050.ui.item.formatedPrice
 import com.example.rgm34172050.ui.navigation.NavigationDestination

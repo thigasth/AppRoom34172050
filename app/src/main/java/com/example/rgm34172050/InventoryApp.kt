@@ -31,7 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.rgm34172050.R.string
+import com.example.inventory.R.string
 import com.example.rgm34172050.ui.navigation.InventoryNavHost
 
 /**

@@ -29,8 +29,8 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.inventory.R
 import com.example.rgm34172050.InventoryTopAppBar
-import com.example.rgm34172050.R
 import com.example.rgm34172050.ui.AppViewModelProvider
 import com.example.rgm34172050.ui.navigation.NavigationDestination
 import com.example.rgm34172050.ui.theme.InventoryTheme
