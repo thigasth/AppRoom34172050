@@ -24,7 +24,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.inventory"
+        applicationId = "br.edu.up.rgm34172050"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
